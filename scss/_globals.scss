@@ -1,0 +1,37 @@
+@use 'variables' as v;
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border: 10px black solid;
+    background-color: v.$Darkcyan;
+    background-image: url(../images/bg-pattern-top.svg), url( ../images/bg-pattern-bottom.svg);
+    background-position: bottom 17.8125rem left -12.5rem, top 21.875rem right -10.625rem;;
+    background-repeat: no-repeat;
+    @media (max-width: 64em){
+        background-position: bottom 18.8125rem left -50.5rem, top 10.875rem right -48.625rem;
+    }
+    }
+    
+
+
+
